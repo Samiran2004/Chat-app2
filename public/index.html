@@ -9,7 +9,33 @@
 </head>
 
 <body>
-    <h1 id="logo">Whatschat</h1>
+    <div class="brand">
+        <img src="chat.png" alt="Reload" id="logo">
+        <p>Whatschat</p>
+    </div>
+
+    <section class="chatSection">
+
+
+        <div class="messageArea">
+
+            <div class="incomingMessage">
+                <h4>Samiran</h4>
+                <p>Message</p>
+
+            </div>
+
+            <div class="outgoingMessage">
+                <h4>Samiran</h4>
+                <p>Message</p>
+            </div>
+        </div>
+
+        <div id="inputArea">
+            <input type="text" name="inputMessage" id="inputMessage">
+            <button type="submit"><img id="sendMessageBtn" src="send-mail.png" alt=""></button>
+        </div>
+    </section>
 
     <script src="server.js"></script>
 </body>
