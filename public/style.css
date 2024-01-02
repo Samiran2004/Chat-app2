@@ -1,12 +1,13 @@
 .brand {
-    border: 2px solid red;
-    border-radius: 10px;
+    border: 1.5px solid green;
+    border-radius: 15px;
     height: 40px;
     width: 200px;
     display: flex;
     padding: 10px;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(176, 245, 176);
 }
 
 .brand p {
@@ -20,7 +21,7 @@
 }
 
 .messageArea {
-    height: 500px;
+    height: 60vh;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -35,6 +36,7 @@
 button {
     border-radius: 50%;
     width: 60px;
+    background-color: rgb(176, 245, 176);
 }
 
 #sendMessageBtn {
@@ -52,7 +54,7 @@ button {
     padding: 20px;
     font-size: 16px;
     outline: none;
-    background-color: rgb(209, 175, 241);
+    background-color: rgb(176, 245, 176);
     border-radius: 30px;
     margin-right: 10px;
 }
