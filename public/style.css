@@ -29,9 +29,6 @@
     padding-top: 40px;
 }
 
-.incomingMessage {}
-
-.outgoingMessage {}
 
 button {
     border-radius: 50%;
@@ -57,4 +54,24 @@ button {
     background-color: rgb(176, 245, 176);
     border-radius: 30px;
     margin-right: 10px;
+}
+
+.incomingMessage {
+    background-color: rgb(55, 249, 55);
+    margin-right: auto; 
+}
+
+.outgoingMessage {
+    background-color: rgb(176, 245, 176);
+    margin-left: auto; 
+    margin-right: 10%; 
+}
+
+/* Add some styling to the messages */
+.incomingMessage,
+.outgoingMessage {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    max-width: 70%; 
 }
