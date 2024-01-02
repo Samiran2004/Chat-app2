@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const http = require('http');
+const { Server } = require('socket.io');
 
 //Config the dotenv file...
 require('dotenv').config();
@@ -15,6 +16,21 @@ app.use(express.static('./public'));
 //Route...
 app.get('/', (req, res) => {
     res.render('index');
+});
+
+// Socket.....
+
+const io = new Server(httpServer);
+
+io.on('connection', (socket) => {
+    console.log(`${socket.id} connected`);
+    socket.on('disconnect', () => {
+        console.log(`${socket.id} disconnect`);
+    });
+
+    socket.on('message', (message) => {
+        io.emit('message', message);
+    });
 });
 
 //connect the server...
