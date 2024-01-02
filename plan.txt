@@ -1,0 +1,17 @@
+1. Create NPM project...
+
+2. Create Index, CSS, Javascript file.
+
+3. Install dependencies....[express, dotenv...].
+
+4.Create a server.
+
+5. Do frontend part.
+
+6. Install socket.io, setup socket.io in index.js and client server.js.
+
+7. Client send message logic in server.js.
+
+8. Recive message on server and brodcast to all clients.
+
+9. Recive message on client and display the message.

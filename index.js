@@ -12,10 +12,15 @@ const httpServer = http.createServer(app);
 //Static file middleware...
 app.use(express.static('./public'));
 
+app.get('/',(req,res)=>{
+    res.render('index');
+});
+
+//connect the server...
 httpServer.listen(PORT, (err) => {
     if (err) {
         console.log("Server connection error.");
     } else {
         console.log(`Server connected on port ${PORT}`);
     }
-})
+});
