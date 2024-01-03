@@ -29,7 +29,8 @@ io.on('connection', (socket) => {
     });
 
     socket.on('message', (message) => {
-        io.emit('message', message);
+        // io.emit('Imessage', message);
+        socket.broadcast.emit('message', message);
     });
 });
 
